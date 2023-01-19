@@ -1,0 +1,13 @@
+Charte Graphique Portfolio
+
+Couleur:
+
+Blanc: #FFFFFF
+Crimson: #DC143C
+Noir: #000000
+Orange: #FF4D05
+
+Police:
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
