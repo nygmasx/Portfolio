@@ -14,10 +14,19 @@
 
 .navbar{
 	position: fixed;
-	background: #DC143C;
+	z-index: 1;
+	background: #404959;
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
 	padding: 15px;
+}
+
+ul li a:hover {
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .menu li a:hover{
+	color: #008BA7;
 }
 
 .navbar .max-width{
@@ -40,27 +49,9 @@
 	transform: scaleX(0);
 }
 
-.navbar .menu li a::after{
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: -3px;
-	width: 100%;
-	height: 1px;
-	transform: scale(0);
-	transform-origin: left;
-	background: white;
-	transform: 0.3s ease-out;
-}
-
-.navbar .menu li a:hover::after{
-	transform: scaleX(1);
-}
-
 .navbar .menu li{
 	list-style: none;
 	display: inline-block;
-
 }
 
 .home{
@@ -70,7 +61,7 @@
 	height: 100vh;
 	min-height: 500px;
 	font-family: 'Ubuntu', sans-serif;
-	color: #DC143C;
+	color: #404959;
 }
 
 .home .max-width{
@@ -90,7 +81,7 @@
 
 .discover{
 	display: flex;
-	background: crimson;
+	background: #404959;
 	border-radius: 10px;
 	width: 200px;
 	height: 50px;
@@ -116,7 +107,7 @@
 #parcours{
 	display: flex;
 	width: 100%;
-	background: crimson;
+	background: #404959;
 	height: 100vh;
 	min-height: 500px;
 	font-family: 'Ubuntu', sans-serif;
@@ -131,10 +122,44 @@
 	top: 0;
 }
 
+.projets{
+	display: flex;
+	width: 100%;
+	background: white;
+	height: 100vh;
+	min-height: 500px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #404959;
+}
+.projets.textparcours{
+	display: flex;
+}
+.projets .img img{
+	width: 50%;
+}
+
+.projets h1{
+	
+}
+
 ::-webkit-scrollbar{
 	width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, white, crimson);
+    background:  #404959;
+}
+
+.img{
+	margin-top: 5%;
+	display: flex;
+	gap: 3%;
+}
+
+.disney{
+	border: solid #404959;
+}
+
+.alex{
+	border: solid #404959;
 }
