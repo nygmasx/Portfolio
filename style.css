@@ -104,22 +104,75 @@ ul li a:hover {
 	margin: auto 0 auto 40px;
 }
 
+section{
+	padding: 100px 0;
+}
+
 #parcours{
 	display: flex;
 	width: 100%;
 	background: #404959;
 	height: 100vh;
 	min-height: 500px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: white;
 }
 
 .titre{
+	text-align: center;
 	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.profil{
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.profil .partiegauche{
+	width: 45%;
+}
+
+.profil .partiegauche img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.profil .partiedroite{
+	width: 55%;
+}
+
+.partiedroite .who{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.partiedroite .who span{
+	color: 	#008BA7;
+}
+
+.partiedroite a{
+	display: flex;
+	background: #008BA7;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	color: white;
 	justify-content: center;
-	position: relative;
-	top: 0;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+.partiedroite a:hover{
+	transition: 0.3s ease-in-out;
 }
 
 .projets{
@@ -128,18 +181,16 @@ ul li a:hover {
 	background: white;
 	height: 100vh;
 	min-height: 500px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #404959;
 }
-.projets.textparcours{
-	display: flex;
-}
-.projets .img img{
-	width: 50%;
+
+.textrojets{
+	font-family: 'Poppins', sans-serif;
 }
 
-.projets h1{
-	
+.projets .img img{
+	width: 50%;
 }
 
 ::-webkit-scrollbar{
