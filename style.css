@@ -252,8 +252,9 @@ section{
 
 @media (max-width: 1104px){
 	.profil .partie.gauche img{
-	height: 350px;
-	width: 350px;
+	height: 100%;
+	width: 100%;
+	min-height: 280px;
 }
 }
 
@@ -313,5 +314,6 @@ section{
 
 	.max-width{
 		max-width: 800px;
+		width: 100%;
 	}
 }
