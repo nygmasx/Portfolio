@@ -89,6 +89,7 @@ ul li a:hover {
 	justify-content: center;
 	padding-top: 15px;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .discover a{
@@ -99,6 +100,12 @@ ul li a:hover {
   transition: 0.3s ease-in-out;
   background: #008BA7;
 }
+
+
+
+
+
+/*PROFIL*/
 
 .parcours .max-width{
 	margin: auto 0 auto 40px;
@@ -112,7 +119,7 @@ section{
 	display: flex;
 	width: 100%;
 	background: #404959;
-	height: 100vh;
+	height: 100%;
 	min-height: 500px;
 	font-family: 'Poppins', sans-serif;
 	color: white;
@@ -134,32 +141,33 @@ section{
 	justify-content: space-between;
 }
 
-.profil .partiegauche{
+
+.profil .partie.gauche{
 	width: 45%;
 }
 
-.profil .partiegauche img{
+.profil .partie.gauche img{
 	height: 400px;
 	width: 400px;
 	object-fit: cover;
 	border-radius: 6px;
 }
 
-.profil .partiedroite{
+.profil .partie.droite{
 	width: 55%;
 }
 
-.partiedroite .who{
+.partie.droite .who{
 	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
-.partiedroite .who span{
+.partie.droite .who span{
 	color: 	#008BA7;
 }
 
-.partiedroite a{
+.partie.droite a{
 	display: flex;
 	background: #008BA7;
 	border-radius: 10px;
@@ -169,12 +177,19 @@ section{
 	justify-content: center;
 	padding-top: 15px;
 	margin-top: 10px;
+	font-family: 'Ubuntu';
 }
 
-.partiedroite a:hover{
+.partie.droite a:hover{
 	transition: 0.1s ease-in-out;
 	border: solid;
 }
+
+
+
+
+
+
 
 .projets{
 	display: flex;
@@ -225,3 +240,78 @@ section{
 	border: solid #404959;
 }
 
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1104px){
+	.home.max-width{
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 1104px){
+	.profil .partie.gauche img{
+	height: 350px;
+	width: 350px;
+}
+}
+
+@media (max-width: 991px){
+	.max-width{
+		padding: 0 50px;
+	}
+}
+
+
+@media (max-width: 947px){
+
+	.navbar .menu{
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	left: -100%;
+	top: 0;
+	background: #111;
+	text-align: center;
+	padding-top: 80px;
+	transition: all 0.3s ease;
+  }
+
+	.navbar .menu.active{
+	left: 0;
+	}
+	.navbar .menu li{
+	display: block;
+	}
+	.navbar .menu li a{
+	display: inline-block;
+	margin: 20px 0;
+	font-size: 25px;
+	}
+	.home .home-content .text-1{
+	font-size: 70px;
+	}
+	.home .home-content .text-2{
+	font-size: 35px;
+	}
+
+	.profil .partie{
+		width: 100%;
+	}
+
+	.profil .gauche{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.profil .droite{
+		flex: 100%;
+	}
+
+
+	.max-width{
+		max-width: 800px;
+	}
+}
