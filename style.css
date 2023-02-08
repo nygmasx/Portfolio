@@ -388,7 +388,7 @@ section{
 }
 
 .ligne {
-    height: 1000px;
+    height: 680px;
     width: 8px;
     margin: 0 auto;
     background: #333;
@@ -414,6 +414,10 @@ section{
 .r3{top: 692px;}
 .r4{top: 1000px;}
 
+.rond img{
+	width: 100%;
+	margin-top: 10%;
+}
 .box {
     color: #333;
     width: 400px;
@@ -440,9 +444,17 @@ section{
     top: 386px;
     left: calc(50% + 270px);
 }
+
+.b2 img{
+	width: 100%;
+}
 .b3 {
     top: 692px;
     left: calc(50% - 270px);
+}
+
+.b3 img{
+	width: 100%;
 }
 .b4 {
     top: 1000px;
