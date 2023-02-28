@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    width: 100%;
+	position: relative;
+    overflow-x: hidden;
+}
+
+
+.slides{
+    width: 100%;
+    display: flex;
+    animation: glisse 10s infinite;
+	cursor: pointer;
+}
+.slide{
+    display: flex;
+}
+.slider{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+	overflow: hidden;
+    position: relative;
+	top: 150px;
+	border-radius: 5px;
+}
+
+
+
+@keyframes glisse {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
