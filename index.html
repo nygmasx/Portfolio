@@ -11,6 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script>
+
 	 <link rel="icon" href="images/logo/IS.ico">
 	<title> Développeur Junior </title>
 </head>
@@ -28,19 +30,26 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 			</div>
+			<div class="dropdown_menu">
+					<li><a href="#home">Accueil</a></li>
+					<li><a href="#parcours">Présentation</a></li>
+					<li><a href="#projets">Projets</a></li>
+					<li><a href="#contact">Contact</a></li>
+			</div>
+
 		</div>
 
 		 <img src="menu-btn.png" class="menu-hamburger">
 	</nav>
 
 	<script>
-        const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-    </script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+       menuHamburger.addEventListener('click', function () {
+						dropDownMenu.classList.toggle('open');
+						})
+		
+   </script>
 
 <!-- SECTION ACCUEIL -->
 
@@ -71,11 +80,11 @@
 				<div class="who">Qui suis-je <span>?<span></div>
 				<div class="textparcours">
 					<p>
-						Bonjour, je suis Sallak Imrane, un développeur web junior étudiant actuellement au Lycée Saint Vincent de Senlis.<br> <br> 
+						Je suis Sallak Imrane, un développeur web junior étudiant actuellement au Lycée Saint Vincent de Senlis.<br> <br> 
 						Je suis prêt à contribuer à des projets passionnants et à en apprendre d'avantage sur mon domaine.
 						<br> <br>
 						N'hésitez pas à consulter mon cv et mon portfolio pour en savoir plus sur mes projets et mes compétences. <br><br>
-						Je suis impatient de vous entendre pour discuter de la façon dont je peux intégrer votre entreprise.
+						Je suis impatient de vous entendre pour discuter de la façon dont je peux intégrer votre entreprise pour un stage, ou autre.
 					<p>
 				</div>
 				<a href="cv.pdf" target="_blank">Téléchargez mon Cv</a>
